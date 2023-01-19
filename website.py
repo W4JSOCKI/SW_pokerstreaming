@@ -5,15 +5,15 @@ import numpy as np
 app = Flask(__name__,template_folder='templates', static_folder='static')
 @app.route('/')
 def index():
-    with open('p1.txt') as f:
+    with open('SW_pokerstreaming/p1.txt') as f:
         p1 = f.read().split()
-    with open('p2.txt') as f:
+    with open('SW_pokerstreaming/p2.txt') as f:
         p2 = f.read().split()
-    with open('p3.txt') as f:
+    with open('SW_pokerstreaming/p3.txt') as f:
         p3 = f.read().split()
-    with open('community.txt') as f:
+    with open('SW_pokerstreaming/community.txt') as f:
         community = f.read().split()
-    with open('names.txt') as f:
+    with open('SW_pokerstreaming/names.txt') as f:
         names = f.read().split()
     
     
