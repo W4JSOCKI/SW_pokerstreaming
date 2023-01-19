@@ -14,9 +14,9 @@ while True:
 
     # Receive data from the server
     received_data = client_socket.recv(1024).decode()
-
+    
     # Save the received data to a file
-    with open("p1.txt", "w") as file:
+    with open("SW_pokerstreaming/texts/p1.txt", "w") as file:
         file.write(received_data)
         file.close()        
     # Close the socket

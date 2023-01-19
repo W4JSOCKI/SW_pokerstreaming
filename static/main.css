@@ -1,13 +1,17 @@
 .container {
-    align-items: center; 
+    align-items: stretch; 
     float: none;
    
   }
-
+.bet{
+  align-items: center; 
+    float: none;
+    padding-right: 60px;
+}
   .player {
     align-items: center; 
     float: none;
-    padding-right: 60px;
+    padding-right: 450px;
    
   }
   .image{

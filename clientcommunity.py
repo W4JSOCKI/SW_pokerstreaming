@@ -16,7 +16,7 @@ while True:
     received_data = client_socket.recv(1024).decode()
 
     # Save the received data to a file
-    with open("community.txt", "w") as file:
+    with open("SW_pokerstreaming/texts/community.txt", "w") as file:
         file.write(received_data)
         file.close()        
     # Close the socket
