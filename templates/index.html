@@ -46,7 +46,7 @@
 
         <div> <p style="background-color:rgb(107, 5, 5);color: white;" > {{ names[1] }}'s cards:</p></div>
         {% for card in p2 %}
-        <div class="image"><img src="static/cars{{ card }}.png" width="100" height="150" class="center"></div> 
+        <div class="image"><img src="static/cards/{{ card }}.png" width="100" height="150" class="center"></div> 
          {% endfor %}
          <div> <p style="background-color:rgb(107, 5, 5);color: white;" > {{ odds[1] }}%</p></div>
       
@@ -54,7 +54,7 @@
     <div class="player">
         <div> <p style="background-color:rgb(107, 5, 5);color: white;" > {{ names[2] }}'s cards:</p></div>
         {% for card in p3 %}
-        <div class="image"> <img src="static/cards{{ card }}.png" width="100" height="150" class="center"></div> 
+        <div class="image"> <img src="static/cards/{{ card }}.png" width="100" height="150" class="center"></div> 
         {% endfor %}
         <div> <p style="background-color:rgb(107, 5, 5);color: white;" > {{ odds[2] }}%</p></div>
     </div>
