@@ -1,0 +1,15 @@
+.container {
+    align-items: center; 
+    float: none;
+   
+  }
+
+  .player {
+    align-items: center; 
+    float: none;
+   
+  }
+  .image{
+      float: left;
+    padding: 5px;
+  }
