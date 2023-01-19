@@ -7,9 +7,11 @@
   .player {
     align-items: center; 
     float: none;
+    padding-right: 60px;
    
   }
   .image{
-      float: left;
-    padding: 5px;
+      align-items: center; 
+      float: none;
+    padding: 10px;
   }
