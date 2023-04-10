@@ -9,7 +9,7 @@ We use the code from this repository to detect the cards on the table. The code 
 https://github.com/elleklinton/PiedPoker (Packege to run simulations of poker games and calculate the odds of winning)
 
 
-Software that has to run on the Raspberry Pi is in the folder "server". "CardDetectorServer.py" is the code that sends community cards. For each player there shoudl be copy of "severp1.py" and "severp2.py" wtih changed port and camera number that sends the cards of the player. 
+Software that has to run on the Raspberry Pi is in the folder "server". "CardDetectorServer.py" is the code that sends community cards. For each player there should be copy of "severp1.py" and "severp2.py" with changed port and camera number that sends the cards of the player. 
 
 The code for website is in the file website.py. Before running the website you have to run apropiate client for community and each player. The website is based on Flask. Clients use websockets to communicate with the server and save information about the game in text files. 
 
