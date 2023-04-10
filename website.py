@@ -7,19 +7,19 @@ app = Flask(__name__,template_folder='templates', static_folder='static')
 def index():
 
 
-    with open('SW_pokerstreaming/texts/p1.txt') as f:
+    with open('texts/p1.txt') as f:
         p1 = f.read().split()
-    with open('SW_pokerstreaming/texts/p2.txt') as f:
+    with open('texts/p2.txt') as f:
         p2 = f.read().split()
-    with open('SW_pokerstreaming/texts/p3.txt') as f:
+    with open('texts/p3.txt') as f:
         p3 = f.read().split()
-    with open('SW_pokerstreaming/texts/community.txt') as f:
+    with open('texts/community.txt') as f:
         community = f.read().split()
-    with open('SW_pokerstreaming/texts/names.txt') as f:
+    with open('texts/names.txt') as f:
         names = f.read().split()
-    with open('SW_pokerstreaming/texts/money.txt') as f:
+    with open('texts/money.txt') as f:
         money= f.read().split()
-    with open('SW_pokerstreaming/texts/bets.txt') as f:
+    with open('texts/bets.txt') as f:
         bets= f.read().split()
     
 
@@ -39,7 +39,7 @@ def index():
         for i in bets:
             intbets.append(int(i))
 
-        with open("SW_pokerstreaming/texts/bets.txt", "w") as file:  
+        with open("texts/bets.txt", "w") as file:  
             for i in range(3):
                 intbets[i]+=1000
                 bets[i]=str(intbets[i]) 
@@ -92,9 +92,9 @@ def index():
             money[i]=str(intmoney[i])
             bets[i]="0"
             intbets[i]=0
-        with open("SW_pokerstreaming/texts/money.txt", "w") as file:  
+        with open("texts/money.txt", "w") as file:  
             file.write(' '.join(money))
-        with open("SW_pokerstreaming/texts/bets.txt", "w") as file:  
+        with open("texts/bets.txt", "w") as file:  
             file.write(' '.join(bets))
             
         
